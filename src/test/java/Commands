@@ -11,7 +11,33 @@ driver.navigate().
  driver.navigate().forward(""); - Перемещение на страницу вперед.
  driver.navigate().refresh(""); - Обновление страницы.
  --------------------------------------------------------------------------------
- driver.getWindowHandles(); - Отображает идентификаторы окон.
+ driver.manage()...Cookies
+--------------------------------------------------------------------------------
+  driver.manage().addCookie(); - Добавить куки.
+  driver.manage().getCookies(); - Получить все куки.
+  driver.manage().getCookieNamed(); - Для получения куки по имени.
+  driver.manage().deleteCookieNamed(); - Удаление куки из списка.
+  driver.manage().deleteAllCookies(); - Удалить все куки.
+--------------------------------------------------------------------------------
+WebElement webEl = new WebElement();
+--------------------------------------------------------------------------------
+ webEl.submit(); - Нажать.
+ webEl.click(); - Отправить.
+ webEl.sendKeys(""); - Ввод значения
+ webEl.clear(); - Очистка полей
+ webEl.getText(); -
+ webEl.getAttribute(""); -
+ webEl.getCssValue(""); -
+ webEl.getTagName(); -
+ webEl.getLocation(); -
+ webEl.getSize(); -
+ webEl.getRect(); -
+ webEl.isDisplayed(); -
+ webEl.isEnabled(); -
+ webEl.isSelected(); -
+--------------------------------------------------------------------------------
+
+driver.getWindowHandles(); - Отображает идентификаторы окон.
  driver.switchTo(); - Переходить между окнами указывая их идентификатор.
  driver.getCurrentUrl(); - Показывает текущий URL в браузере.
  driver.getTitle(); - Показывает название/заголовок.
@@ -19,3 +45,5 @@ driver.navigate().
  driver.findElement(by...()) - Поиск по элементу.
  driver.quit(); - для остановки работы браузера (все окна) рекомендовано выбирать это.
  driver.close(); - для остановки работы браузера (текущее окно).
+
+
